@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Porsche Quiz</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0""
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="nav">
+      
+      <div class="right">
+        <h4>Time: <span id="timeLeft">0</span></h4>
+      </div>
+    </div>
+    
+    <div id="quizContainer" class="container">
+      <div class="title">Porsche Quiz</div>
+      <div id="question" class="question"></div>
+        <label class="option"
+          ><input type="radio" name="option" value="A" /><span id="optA"></span
+        ></label>
+        <label class="option"
+          ><input type="radio" name="option" value="B" /><span id="optB"></span
+        ></label>
+        <label class="option"
+          ><input type="radio" name="option" value="C" /><span id="optC"></span
+        ></label>
+        <label class="option"
+          ><input type="radio" name="option" value="D" /><span id="optD"></span
+        ></label>
+        <button id="nextButton" class="next-btn" onclick="loadNextQuestion()";>
+          Next question
+        </button>
+      </div>
+      <div id="result" class="container result" style="display:none;"></div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
